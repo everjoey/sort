@@ -14,7 +14,7 @@ def bubble(a):
 		i -= 1
 	
 if __name__ == '__main__':
-	a = [random.randrange(10) for i in range(10)]
+	a = [random.randrange(1000) for i in range(1000)]
 	print(a)
 	cProfile.run('bubble(a)')
 	print(a)
