@@ -12,3 +12,6 @@ def bubble_sort(a):
 				a[j], a[j+1] = a[j+1], a[j]
 				flag = 1
 		i -= 1
+	
+if __name__ == '__main__':
+	
