@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import random
-import time
+import cProfile
 
 def bubble(a):
 	i = len(a) - 1
@@ -16,9 +16,6 @@ def bubble(a):
 if __name__ == '__main__':
 	a = [random.randrange(10) for i in range(10)]
 	print(a)
-	s = time.time()		
-	bubble(a)
-	f = time.time()
+	cProfile.run('bubble(a)')
 	print(a)
 	print(f - s)
-	
