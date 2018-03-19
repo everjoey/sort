@@ -18,4 +18,3 @@ if __name__ == '__main__':
 	print(a)
 	cProfile.run('bubble(a)')
 	print(a)
-	print(f - s)
