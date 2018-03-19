@@ -18,4 +18,7 @@ if __name__ == '__main__':
 	print(a)
 	s = time.time()		
 	bubble(a)
+	f = time.time()
 	print(a)
+	print(f - s)
+	
