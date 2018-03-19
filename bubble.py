@@ -2,7 +2,7 @@
 import random
 import time
 
-def bubble_sort(a):
+def bubble(a):
 	i = len(a) - 1
 	flag = 1
 	while flag == 1:
@@ -14,4 +14,8 @@ def bubble_sort(a):
 		i -= 1
 	
 if __name__ == '__main__':
-	
+	a = [random.randrange(10) for i in range(10)]
+	print(a)
+	s = time.time()		
+	bubble(a)
+	print(a)
