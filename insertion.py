@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import random
-import time
+import cProfile
 
 def insertion(a):
 	for i in range(1, len(a)):
@@ -14,5 +14,5 @@ def insertion(a):
 if __name__ == '__main__':
 	a = [random.randrange(1000) for i in range(1000)]
 	print(a)
-	insertion(a)
+	cProfile.run('insertion(a)')
 	print(a)
