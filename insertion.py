@@ -10,3 +10,9 @@ def insertion(a):
 			a[j+1] = a[j]
 			j -= 1
 		a[j+1] = temp
+
+if __name__ == '__main__':
+	a = [random.randrange(1000) for i in range(1000)]
+	print(a)
+	insertion(a)
+	print(a)
